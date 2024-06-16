@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Лекция 1-->
+  <title>Envelope</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Envelope</p>
+  </a>
+  <p class="device-notification--message">Сайт имеет большое количество элементов поэтому просим вас открыть сайт в большем разрешении.</p>
+</div>
+<!--Вступительная страница-->
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Envelope</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Основы</span></li>
+            <li><span>HTML</span></li>
+            <li><span>CSS</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>JavaScript 2</span></li>
+            <li><span>Заключение</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Основы<br>HTML, CSS<br>и JavaScript</h1>
+                <a href="index.html">
+                  <button style="color: white;">На Главную
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                </a>
+                <img src="assets/img/Frontend_Intro.png" alt="Welcome" width="650px" height="500px">
+              </div>
+              <div class="introduction-visual">
+                  <h3 style="font-size: 30px;">Добро пожаловать!</h3>
+                  <p style="font-size: 25px;">Сегодня мы начнём наше увлекательное путешествие в мир веб-разработки, где вы узнаете основы HTML, CSS и JavaScript – языков, которые лежат в основе всех веб-сайтов и приложений.</p>
+              </div>
+            </div>
+          </li>
+          <!--Страница HTML-->
+          <li class="l-section section">
+            <div class="work">
+              <img src="assets/img/HTML_Logo.png" width="175px" height="150px"></img>
+              <h1>HTML (HyperText Markup Language):<br> Структура и контент</h1>
+              <p style="font-size: 20px;">
+                <span style="color: orangered;">HTML</span> – это язык разметки, который используется для создания структуры веб-страницы. Он определяет заголовки, параграфы, изображения, ссылки, списки и другие элементы, которые вы видите на веб-странице.
+              </p>
+              <p text-align: left; style="font-size: 30px;">
+                Пример:
+              </p>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid orangered;"><code>
+                  &lt;!DOCTYPE html&gt;&lt;!-- Объявляем тип документа как HTML --&gt
+                  &lt;html&gt;
+                    &lt;head&gt;
+                      &lt;title&gt;Простой HTML код&lt;/title&gt;
+                    &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Добро пожаловать!&lt;/h1&gt;
+                    &lt;ul&gt; &lt;!-- Неупорядоченный список (ul) --&gt;
+                      &lt;li&gt;Пункт 1&lt;/li&gt; &lt;!-- Элемент списка (li) --&gt;
+                      &lt;li&gt;Пункт 2&lt;/li&gt;
+                    &lt;/ul&gt; &lt;!-- Конец неупорядоченного списка (ul) --&gt;
+                    &lt;img src="https://picsum.photos/200/300" alt="Пример изображения"&gt;&lt;!-- Вставка изображения (img) --&gt;
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                </pre></code>
+            </div>
+          </li>
+          <!--Страница CSS-->
+          <li class="l-section section">
+            <div class="work">
+              <img src="assets/img/CSS_Logo.png" width="130px" height="120px"></img>
+              <h1>CSS (Cascading Style Sheets):<br> Стиль и внешний вид</h1>
+              <p style="font-size: 20px;">
+                <span style="color: lightskyblue;">CSS</span> – это язык, который используется для оформления внешнего вида веб-страницы. Он позволяет задать цвета, шрифты, размеры, отступы, положение элементов и многое другое.
+              </p>
+              <p text-align: left; style="font-size: 30px;">
+                Пример:
+              </p>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid lightskyblue;"><code>
+                  /* Базовые стили для всего документа */
+                  body {
+                    font-family: 'Arial', sans-serif; /* Шрифт для всего текста */
+                    background-color: #f4f4f4; /* Цвет фона */
+                    color: #333; /* Цвет текста */
+                    margin: 0; /* Убираем отступы по умолчанию */
+                    padding: 0; /* Убираем внутренние отступы */
+                  }
+                  
+                  /* Стили для заголовка страницы */
+                  header {
+                    background-color: #333; /* Цвет фона заголовка */
+                    color: #fff; /* Цвет текста в заголовке */
+                    padding: 20px; /* Внутренние отступы заголовка */
+                    text-align: center; /* Выравнивание текста по центру */
+                  }
+                </pre></code>
+            </div>
+          </li>
+          <!--Страница JavaScript-->
+          <li class="l-section section">
+            <div class="work">
+              <img src="assets/img/JS_Logo.png" width="130px" height="120px"></img>
+              <h1>JavaScript:<br> Интерактивность и поведение</h1>
+              <p style="font-size: 20px;">
+                <span style="color: yellow;">JavaScript</span> – это язык программирования, который добавляет интерактивность и динамику на веб-страницу. Он позволяет создавать анимацию, обработку событий, запросы к серверу и многое другое.
+              </p>
+              <p text-align: left; style="font-size: 30px;">
+                Пример:
+              </p>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid yellow;">
+                  const button = document.querySelector('button'); // Находим кнопку на странице
+
+                  button.addEventListener('click', () => { // Прикрепляем обработчик события "click" к кнопке
+                    console.log('HelloWorld'); // Выводим сообщение в консоль
+                  });
+                </pre>
+            </div>
+          </li>
+          <!--JS2-->
+          <li class="l-section section">
+            <div class="work">
+              <h1>Чтобы код работал:</h1>
+              <ol>
+                <li>Убедитесь, что у вас есть кнопка на странице <code>index.html</code>. Например:</li>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid yellow;">&lt;button&gt;Нажми меня&lt;/button&gt;</pre>
+                <li>Сохраните код JavaScript в файл <code>script.js</code> и добавьте его в <code>index.html</code>:</li>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid yellow;">&lt;script src="script.js"&gt;&lt;/script&gt;</pre>
+              </ol>
+              <p>Теперь, когда вы откроете <code>index.html</code> в браузере и нажмете на кнопку, в консоли браузера (обычно ее можно открыть с помощью F12) появится сообщение “HelloWorld”.</p>
+            </div>
+          </li>
+          <!--Страница Домашки-->
+          <li class="l-section section">
+            <div class="work">
+              <h2 style="font-size: 70px;">Поздравляем!</h2>
+              <p style="font-size: 25px;">Вы сделали первый шаг в мир веб-разработки. Продолжайте изучать, экспериментировать и создавать свои собственные проекты. Но надо будет выполнить домашку:(</p>
+              <h1>Домашнее Задание</h1>
+              <p style="font-size: 20px;">
+                <span style="color: #0f33ff;">1.</span> Прочитайте документацию по основам <a href="https://html5book.ru/osnovy-html/">HTML</a>, <a href="https://html5book.ru/osnovy-css/">CSS</a> и <a href="https://js-documentation.netlify.app">JavaScript</a>.
+              </p>
+              <p style="font-size: 20px;">
+                <span style="color: #0f33ff;">2.</span> Создайте простую веб-страницу с заголовком, параграфом и изображением.
+              </p>
+              <p style="font-size: 20px;">
+                <span style="color: #0f33ff;">3.</span> Попробуйте изменить стиль вашей страницы с помощью CSS.
+              </p>
+              <p style="font-size: 20px;">
+                <span style="color: #0f33ff;">4.</span> Добавьте к странице более изобретательный JavaScript-код не бойтесь экспериментировать!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!--Навигация-->
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Основы</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>JavaScript 2</li>
+    <li>Заключение</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>

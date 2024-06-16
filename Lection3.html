@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Лекция 1-->
+  <title>Envelope</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="index.html">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Envelope</p>
+  </a>
+  <p class="device-notification--message">Сайт имеет большое количество элементов поэтому просим вас открыть сайт в большем разрешении.</p>
+</div>
+<!--Вступительная страница-->
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Envelope</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Главная</span></li>
+            <li><span>Что такое сервер?</span></li>
+            <li><span>Как работают серверы</span></li>
+            <li><span>Ключевые концепции</span></li>
+            <li><span>Практическое упражнение</span></li>
+            <li><span>Заключение</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Основы работы с сервером:<br>Заглянем за кулисы веб-приложений</h1>
+                <a href="index.html">
+                  <button style="color: white;">На Главную
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                </a>
+                <img src="assets/img/Server_Intro.png" alt="Welcome" width="400px" height="400px">
+              </div>
+              <div class="introduction-visual">
+                  <h3 style="font-size: 30px;">Добро пожаловать!</h3>
+                  <p style="font-size: 25px;"> Сегодня мы откроем дверь в мир серверной разработки, узнав о том, как веб-приложения взаимодействуют с серверами, чтобы оживать.</p>
+              </div>
+            </div>
+          </li>
+          <!--Что такое сервер-->
+          <li class="l-section section">
+            <div class="work">
+              <h1>Что такое сервер?</h1>
+              <p style="font-size: 30px; text-align: justify;">
+                <span style="color: #0f33ff;">Сервер</span> - это компьютер, который предоставляет доступ к ресурсам другим компьютерам, называемым клиентами. Он работает как центральный узел, хранящий информацию и предоставляющий услуги по сети. Серверы обрабатывают запросы от клиентов, отправляя им ответы и управляя ресурсами, такими как память и процессорное время. Они играют важную роль в функционировании интернета, предоставляя доступ к веб-сайтам, электронной почте, онлайн-играм и другим сервисам. Серверы бывают физическими, виртуальными и облачными, каждая из которых имеет свои преимущества и недостатки.
+              </p>
+            </div>
+          </li>
+          <!--Как работают серверы?-->
+          <li class="l-section section">
+            <div class="work">
+              <h1>Как работают серверы?</h1>
+              <ol>
+              <li>
+                <b>Клиентский запрос:</b> Когда вы вводите адрес сайта в браузере, ваш компьютер (клиент) отправляет запрос на сервер.
+              </li>
+              <li>
+                <b>Обработка запроса:</b> Сервер получает запрос и определяет, что нужно сделать.
+              </li>
+              <li>
+                <b>Генерация ответа:</b> Сервер обрабатывает запрос, например, выбирает нужные файлы или данные из базы данных, а затем формирует ответ для клиента.
+              </li>
+              <li>
+                <b>Отправка ответа:</b> Сервер отправляет ответ клиенту, и ваш браузер отображает полученную информацию.
+              </li>
+              </ol>
+            </div>
+          </li>
+          <!--Ключевые концепции-->
+          <li class="l-section section">
+            <div class="work">
+              <h1 style="align-self: center; font-size: 50px; margin-bottom: 85px;">Ключевые концепции:</h1>
+              <div class="intro--options">
+                <a>
+                  <img style="height: 150px; width: 200px; margin-left: 20px;" src="assets/img/HTPP_Logo.png"></img>
+                  <h3 style="color: #0f33ff; text-align: center;">HTTP (HyperText Transfer Protocol)</h3>
+                  <p style="font-size: 18px; text-align: center;">Протокол, используемый для обмена данными между клиентами и серверами. HTTP-запросы и ответы содержат информацию о том, что нужно получить или передать.</p>
+                </a>
+                <a>
+                  <img style="height: 150px; width: 275px;" src="assets/img/REST_API_Logo.png"></img>
+                  <h3 style="color: #0f33ff; text-align: center;">REST API (Representational State Transfer Application Programming Interface)</h3>
+                  <p style="font-size: 18px; text-align: center;">Стандартный набор правил для взаимодействия с серверами через HTTP-запросы. Он позволяет создавать приложения, которые могут получать, отправлять и обновлять данные на сервере.</p>
+                </a>
+                <a>
+                  <img style="height: 150px; width: 150px; margin-left: 60px;" src="assets/img/Database.png"></img>
+                  <h3 style="color: #0f33ff; text-align: center;">Базы данных</h3>
+                  <p style="font-size: 18px; text-align: center;">Системы хранения данных, которые используются для сохранения информации. Серверы часто используют базы данных для хранения информации о пользователях, товарах, контенте и т.д.</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <!--Практическое упражнение-->
+          <li class="l-section section">
+            <div class="work">
+              <h1>Практическое упражнение:</h1>
+              <p style="font-size: 20px;">
+                1. Установите <span style="color: yellow;">Node.js</span>: Node.js - это среда выполнения JavaScript, которая позволяет вам создавать серверные приложения на JavaScript.
+              </p>
+              <p text-align: left; style="font-size: 20px;">
+                2. Создайте файл server.js:
+              </p>
+                <pre style="background-color: rgb(54, 54, 54); padding: 10px; width: auto; border: 8px solid yellow;">
+                  const http = require('http');
+
+                  const hostname = 'localhost';
+                  const port = 3000;
+
+                  const server = http.createServer((req, res) => {
+                    res.statusCode = 200;
+                    res.setHeader('Content-Type', 'text/plain');
+                    res.end('Привет от сервера!');
+                  });
+
+                  server.listen(port, hostname, () => {
+                    console.log(`Сервер запущен на http://${hostname}:${port}/`);
+                  });
+                </pre>
+                <p text-align: left; style="font-size: 20px;">
+                  3. Запустите сервер: В терминале введите <span style="color: palevioletred;">node server.js</span>.
+                </p>
+                <p text-align: left; style="font-size: 20px;">
+                  4. Откройте браузер: Перейдите на адрес <span style="color: palevioletred;">http://localhost:3000/</span>.
+                </p>
+            </div>
+          </li>
+        <!--Заключение-->
+        <li class="l-section section">
+          <div class="work">
+            <h2 style="font-size: 70px;">Заключение</h2>
+            <p style="font-size: 25px;">Понимание работы серверов - это ключ к созданию динамических и интерактивных веб-приложений. Продолжайте изучать, экспериментировать и создавать свои собственные проекты!</p>
+            <div class="homework">
+            <h1>Домашнее Задание</h1>
+            <p>
+              <span style="color: #0f33ff;">1. </span>Исследуйте документацию <a href="https://nodejs-org-git-meta-performance-bundle-improvements-openjs.vercel.app/en/docs">Node.js</a>: Узнайте больше о создании серверных приложений с помощью Node.js.
+            </p>
+            <p>
+              <span style="color: #0f33ff;">2. </span>Изучите основы <a href="https://habr.com/ru/articles/215117/">HTTP</a>: Поймите, как работают HTTP-запросы и ответы.
+            </p>
+            <p>
+              <span style="color: #0f33ff;">3. </span>Найдите учебник по работе с <a href="https://rapidapi.com/guides/api-docs-rest#understanding-rest-api-documentation">REST API</a>: Узнайте, как взаимодействовать с серверами через API.
+            </p>
+          </div>
+          </div>
+        </li>
+      </ul>
+        <!--Навигация-->
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Главная</li>
+    <li>Что такое сервер?</li>
+    <li>Как работают серверы?</li>
+    <li>Ключевые концепции</li>
+    <li>Практическое упражнение</li>
+    <li>Заключение</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
